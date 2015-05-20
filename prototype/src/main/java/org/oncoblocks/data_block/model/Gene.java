@@ -40,7 +40,7 @@ public class Gene {
             map.put(alias.toUpperCase(), alias);
         }
 
-        this.aliases = new HashSet<String>(map.values());
+        this.aliases = new TreeSet<String>(map.values());
     }
 
     @Override
